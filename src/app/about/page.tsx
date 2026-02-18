@@ -4,7 +4,7 @@ import { Gem, Leaf, Sparkles, Heart } from "lucide-react";
 import Container from "@/components/ui/Container";
 
 export const metadata: Metadata = {
-  title: "About CELY Diamond",
+  title: "About Maison Dorais",
   description:
     "Learn about our commitment to creating exquisite lab-grown diamond jewelry with ethics and sustainability at its core.",
 };
@@ -26,7 +26,7 @@ const values = [
     icon: Sparkles,
     title: "Expert Craftsmanship",
     description:
-      "Each CELY piece is designed and crafted by master jewelers with decades of experience. We use only the finest precious metals and hand-select every diamond for exceptional quality.",
+      "Each Maison Dorais piece is designed and crafted by master jewelers with decades of experience. We use only the finest precious metals and hand-select every diamond for exceptional quality.",
   },
   {
     icon: Heart,
@@ -49,7 +49,7 @@ export default function AboutPage() {
             Reimagining Diamond Jewelry
           </h1>
           <p className="text-charcoal-light text-lg leading-relaxed">
-            CELY Diamond was founded with a singular vision: to create jewelry of
+            Maison Dorais was founded with a singular vision: to create jewelry of
             extraordinary beauty while respecting our planet. We harness
             cutting-edge technology to grow diamonds that are indistinguishable
             from those formed deep within the earth &mdash; identical in every way
@@ -96,7 +96,7 @@ export default function AboutPage() {
               a mined diamond.
             </p>
             <p>
-              Every CELY diamond is independently certified by the International
+              Every Maison Dorais diamond is independently certified by the International
               Gemological Institute (IGI), graded on the same 4Cs scale as mined
               diamonds: Cut, Color, Clarity, and Carat weight.
             </p>

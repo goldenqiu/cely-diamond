@@ -66,8 +66,8 @@ export default function Footer() {
           <div>
             <h4 className="font-serif text-lg mb-4">Contact</h4>
             <ul className="space-y-2 text-sm text-cream/70">
-              <li>hello@celydiamond.com</li>
-              <li>1-800-CELY-DIA</li>
+              <li>hello@maisondorais.com</li>
+              <li>1-800-DORAIS</li>
             </ul>
           </div>
         </div>

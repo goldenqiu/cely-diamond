@@ -1,4 +1,4 @@
-export const SITE_NAME = "CELY Diamond";
+export const SITE_NAME = "Maison Dorais";
 export const SITE_DESCRIPTION =
   "Exquisite lab-grown diamond jewelry crafted with precision and purpose.";
 

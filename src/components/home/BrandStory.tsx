@@ -13,7 +13,7 @@ export default function BrandStory() {
             Beauty Without Compromise
           </h2>
           <p className="text-cream/70 text-lg leading-relaxed mb-8">
-            At CELY Diamond, we believe that luxury should never come at the
+            At Maison Dorais, we believe that luxury should never come at the
             cost of our planet. Our lab-grown diamonds are chemically, optically,
             and physically identical to mined diamonds &mdash; delivering the same
             fire, brilliance, and scintillation without the environmental impact.
