@@ -1,19 +1,25 @@
 "use client";
 
+import Image from "next/image";
 import { Minus, Plus, Trash2 } from "lucide-react";
 import { CartItem as CartItemType } from "@/types/cart";
 import { useCart } from "@/context/CartContext";
 import { formatCurrency } from "@/lib/utils";
-import { Diamond } from "lucide-react";
 
 export default function CartItem({ item }: { item: CartItemType }) {
   const { updateQuantity, removeItem } = useCart();
 
   return (
     <div className="flex gap-4">
-      {/* Image placeholder */}
-      <div className="w-20 h-20 flex-shrink-0 product-image-placeholder rounded">
-        <Diamond size={24} className="text-gold/60" />
+      {/* Image */}
+      <div className="w-20 h-20 flex-shrink-0 rounded overflow-hidden relative bg-cream">
+        <Image
+          src={item.product.images[0]}
+          alt={item.product.name}
+          fill
+          className="object-cover"
+          sizes="80px"
+        />
       </div>
 
       <div className="flex-1 min-w-0">

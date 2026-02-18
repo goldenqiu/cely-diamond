@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Diamond } from "lucide-react";
+import Image from "next/image";
 import { Product } from "@/types/product";
 import { formatCurrency } from "@/lib/utils";
 
@@ -10,13 +10,16 @@ export default function ProductCard({ product }: { product: Product }) {
       className="group block"
     >
       {/* Image */}
-      <div className="aspect-square product-image-placeholder rounded-lg overflow-hidden mb-4 relative">
-        <Diamond
-          size={48}
-          className="text-gold/40 group-hover:text-gold/60 transition-colors"
+      <div className="aspect-square rounded-lg overflow-hidden mb-4 relative bg-cream">
+        <Image
+          src={product.images[0]}
+          alt={product.name}
+          fill
+          className="object-cover group-hover:scale-105 transition-transform duration-300"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
         />
         {product.compareAtPrice && (
-          <span className="absolute top-3 left-3 bg-gold text-white text-xs px-2 py-1 rounded">
+          <span className="absolute top-3 left-3 bg-gold text-white text-xs px-2 py-1 rounded z-10">
             Sale
           </span>
         )}

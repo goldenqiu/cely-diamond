@@ -1,7 +1,8 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { ChevronLeft, Diamond, Shield, Truck, RotateCcw } from "lucide-react";
+import Image from "next/image";
+import { ChevronLeft, Shield, Truck, RotateCcw } from "lucide-react";
 import Container from "@/components/ui/Container";
 import ProductSpecs from "@/components/products/ProductSpecs";
 import AddToCartButton from "@/components/products/AddToCartButton";
@@ -52,8 +53,15 @@ export default async function ProductDetailPage({
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Image */}
-          <div className="aspect-square product-image-placeholder rounded-lg">
-            <Diamond size={80} className="text-gold/40" />
+          <div className="aspect-square rounded-lg overflow-hidden relative bg-cream">
+            <Image
+              src={product.images[0]}
+              alt={product.name}
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              priority
+            />
           </div>
 
           {/* Details */}
